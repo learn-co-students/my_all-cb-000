@@ -9,4 +9,13 @@ def my_all?(collection)
     block_return_values << yield(collection[i]) # 3. save the return value of the yield block (shovel return values into new array)
     i += 1
   end
+
+  # possible return value: block_return_values = [true, false, false]
+
+  # 4. determine the return value of the method
+  if block_return_values.include?(false)
+    false # return false if array has a false value
+  else
+    true
+  end
 end
