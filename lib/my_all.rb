@@ -5,6 +5,8 @@ def my_all?(collection)
   i = 0
 
   while i < collection.length
+    # 2. yield each element in the collection to the block
+    yield(collection[i])
     i += 1
   end
 end
