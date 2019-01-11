@@ -12,6 +12,4 @@ def my_all?(collection)
   else
     collection
   end
-  
-  
 end
